@@ -1,0 +1,7 @@
+{
+  "name": "test-skill",
+  "description": "Test skill creation",
+  "base_url": "https://tailwindcss.com/docs/installation",
+  "max_pages": 5,
+  "rate_limit": 0.5
+}

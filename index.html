@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Bank | Premium Fintech</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Status Bar Simulation -->
+        <div class="status-bar">
+            <span class="time">9:41</span>
+            <div class="status-icons">
+                <span>📶</span>
+                <span>🔋</span>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="app-header">
+            <div class="profile-section">
+                <div class="avatar">JL</div>
+                <div class="welcome">
+                    <p class="greeting">Good Morning,</p>
+                    <h2 class="user-name">James Lin</h2>
+                </div>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                <span class="icon">🌙</span>
+            </button>
+        </header>
+
+        <!-- Main Content -->
+        <main id="app-content">
+            <!-- Dashboard Screen (Default) -->
+            <section id="dashboard" class="screen active">
+                <div class="balance-card glass">
+                    <p class="label">Total Balance</p>
+                    <h1 class="amount">$42,580.00</h1>
+                    <div class="balance-actions">
+                        <button class="action-btn">Add Money</button>
+                        <button class="action-btn outline">Send</button>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <div class="action-item">
+                        <div class="action-icon purple">💸</div>
+                        <p>Transfer</p>
+                    </div>
+                    <div class="action-item">
+                        <div class="action-icon orange">📑</div>
+                        <p>Bills</p>
+                    </div>
+                    <div class="action-item">
+                        <div class="action-icon cyan">📊</div>
+                        <p>Analytics</p>
+                    </div>
+                    <div class="action-item">
+                        <div class="action-icon lime">🛡️</div>
+                        <p>Security</p>
+                    </div>
+                </div>
+
+                <div class="section-header">
+                    <h3>Recent Transactions</h3>
+                    <a href="#" class="see-all">See All</a>
+                </div>
+
+                <div class="transaction-list">
+                    <div class="transaction-item glass">
+                        <div class="tx-icon">☕</div>
+                        <div class="tx-info">
+                            <p class="tx-title">Starbucks Coffee</p>
+                            <p class="tx-date">Today, 08:30 AM</p>
+                        </div>
+                        <p class="tx-amount negative">-$12.50</p>
+                    </div>
+                    <div class="transaction-item glass">
+                        <div class="tx-icon">🍎</div>
+                        <div class="tx-info">
+                            <p class="tx-title">Apple Store</p>
+                            <p class="tx-date">Yesterday, 02:15 PM</p>
+                        </div>
+                        <p class="tx-amount negative">-$1,299.00</p>
+                    </div>
+                    <div class="transaction-item glass">
+                        <div class="tx-icon">💰</div>
+                        <div class="tx-info">
+                            <p class="tx-title">Salary Deposit</p>
+                            <p class="tx-date">15 Jan, 09:00 AM</p>
+                        </div>
+                        <p class="tx-amount positive">+$8,500.00</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cards Screen -->
+            <section id="cards" class="screen">
+                <div class="section-header">
+                    <h3>My Cards</h3>
+                    <button class="add-card">+</button>
+                </div>
+
+                <div class="cards-container">
+                    <div class="bank-card glass purple">
+                        <div class="card-chip"></div>
+                        <div class="card-number">•••• •••• •••• 4258</div>
+                        <div class="card-details">
+                            <div class="card-holder">
+                                <p class="label">Card Holder</p>
+                                <p class="name">James Lin</p>
+                            </div>
+                            <div class="card-expiry">
+                                <p class="label">Expires</p>
+                                <p class="date">12/28</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-settings glass">
+                    <div class="setting-item">
+                        <span>🔒 Lock Card</span>
+                        <input type="checkbox" class="toggle">
+                    </div>
+                    <div class="setting-item">
+                        <span>💳 Contactless</span>
+                        <input type="checkbox" class="toggle" checked>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Screen -->
+            <section id="stats" class="screen">
+                <div class="section-header">
+                    <h3>Spending Analysis</h3>
+                    <select class="period-select">
+                        <option>This Month</option>
+                        <option>Last Month</option>
+                    </select>
+                </div>
+
+                <div class="chart-container glass">
+                    <svg viewBox="0 0 300 150" class="spending-chart">
+                        <path
+                            d="M0,150 L0,100 C30,90 60,110 90,80 C120,50 150,70 180,40 C210,10 240,30 270,20 L300,10 L300,150 Z"
+                            class="chart-fill"></path>
+                        <path d="M0,100 C30,90 60,110 90,80 C120,50 150,70 180,40 C210,10 240,30 270,20 L300,10"
+                            class="chart-line"></path>
+                    </svg>
+                    <div class="chart-labels">
+                        <span>W1</span><span>W2</span><span>W3</span><span>W4</span>
+                    </div>
+                </div>
+
+                <div class="categories-list">
+                    <div class="category-item glass">
+                        <div class="cat-info">
+                            <p class="cat-name">Shopping</p>
+                            <div class="cat-bar">
+                                <div class="fill" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                        <p class="cat-amount">$1,240</p>
+                    </div>
+                    <div class="category-item glass">
+                        <div class="cat-info">
+                            <p class="cat-name">Food & Drink</p>
+                            <div class="cat-bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <p class="cat-amount">$840</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Navigation Bar -->
+        <nav class="app-nav">
+            <a href="#dashboard" class="nav-item active" data-screen="dashboard">
+                <span class="icon">🏠</span>
+                <p>Home</p>
+            </a>
+            <a href="#cards" class="nav-item" data-screen="cards">
+                <span class="icon">💳</span>
+                <p>Cards</p>
+            </a>
+            <a href="#stats" class="nav-item" data-screen="stats">
+                <span class="icon">📈</span>
+                <p>Stats</p>
+            </a>
+            <a href="#profile" class="nav-item" data-screen="profile">
+                <span class="icon">👤</span>
+                <p>Profile</p>
+            </a>
+        </nav>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "test-skill",
+  "total_pages": 1,
+  "base_url": "https://tailwindcss.com/docs/installation",
+  "llms_txt_detected": false,
+  "llms_txt_variant": null,
+  "pages": [
+    {
+      "title": "Installing Tailwind CSS with Vite - Tailwind CSS",
+      "url": "https://tailwindcss.com/docs/installation"
+    }
+  ]
+}
